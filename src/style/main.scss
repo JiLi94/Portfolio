@@ -1,0 +1,76 @@
+* { // reset default setting of box model
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: antiquewhite;
+    .navbar-logo {
+        width: 3rem;
+        height: 3rem;      
+    }
+    .no-decoration {
+        text-decoration: none;
+    }
+    .navbar-menu {
+        display: none; //hide by default at small screen size
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        padding: 1rem;
+        // a {
+        //     display: block;
+        //     text-align: center;
+        //     color: antiquewhite;
+        //     font-size: 1.5rem;
+        // }
+    }
+    .hamburger {
+        display: block;
+        position: absolute; 
+        right: 0;
+        top: 0; //stay at the bottom right of the screen
+        width: 3rem;
+        height: 4rem;
+    }
+}
+
+main {
+    .intro {
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+}
+
+//footer stay the bottom middle
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+// at larger screen size:
+@media screen and (min-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .hamburger {
+        display: none; //hide the hamburger button in large screen
+    }
+    nav .navbar-menu {
+        display: flex !important; // navbar display should be flex and stay in the same row with logo
+        flex-direction: row;
+    }
+    .sidebar { // make the sidebar always at the middle right of the screen
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 50%;
+    }
+}
+    
