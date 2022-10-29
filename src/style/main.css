@@ -4,54 +4,98 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "roboto", cursive;
+}
+
 nav {
-  background-color: antiquewhite;
+  background-color: #323232;
 }
-nav .navbar-logo {
-  width: 3rem;
-  height: 3rem;
+nav .logo-and-hamburger {
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+  align-items: center;
 }
-nav .no-decoration {
+nav .logo-and-hamburger .navbar-logo {
+  font-family: "Island Moments", cursive;
+  font-size: 3rem;
+  color: #cccccc;
   text-decoration: none;
+}
+nav .logo-and-hamburger .hamburger {
+  color: #cccccc;
+  background: none;
+  border: none;
 }
 nav .navbar-menu {
   display: none;
+  list-style: none;
   flex-direction: column;
   align-items: center;
-  background-color: black;
-  padding: 1rem;
+  background-color: #323232;
+  border-top: 2px solid white;
 }
-nav .hamburger {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 3rem;
-  height: 4rem;
+nav .navbar-menu li {
+  padding-bottom: 0.5rem;
+}
+nav .navbar-menu li a {
+  color: #cccccc;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-main .intro p {
-  font-size: 1.5rem;
+main {
+  padding: 0 0.5rem;
+}
+main .intro {
+  padding: 2rem 0;
+}
+main .intro .self-intro h2 {
   text-align: center;
+  font-weight: bold;
+  color: #323232;
+  padding-bottom: 0.5rem;
+}
+main .landing-page-img img {
+  width: 100%;
+  height: auto;
+}
+main .about-me article {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+main .about-me article h2 {
+  width: 2rem;
+  overflow: visible;
+  border-top: 1px solid #323232;
+  padding: 1rem 0;
+}
+main .about-me article p {
+  padding-bottom: 1rem;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  padding-top: 1rem;
+  width: 100vw;
   text-align: center;
+  color: #6f6f74;
 }
 
 @media screen and (min-width: 600px) {
-  nav {
+  .navbar {
     display: flex;
     justify-content: space-between;
   }
-  nav .hamburger {
+  .navbar .hamburger {
     display: none;
   }
-  nav .navbar-menu {
+  .navbar .navbar-menu {
     display: flex !important;
     flex-direction: row;
+    border: none;
   }
   .sidebar {
     display: flex;
