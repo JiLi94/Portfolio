@@ -1,0 +1,43 @@
+nav {
+    background-color: $primary-dark-color;
+
+    .logo-and-hamburger {
+        display: flex;
+        padding: 0 0.5rem;
+        justify-content: space-between; //logo and hamburger menu stay at the left and right of the screen
+        align-items: center;
+
+        .navbar-logo {
+            font-family: 'Island Moments', cursive;
+            font-size: 3rem;
+            color: $primary-light-color;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            color: $primary-light-color;
+            background: none;
+            border: none;
+        }
+    }
+
+    .navbar-menu {
+        display: none; //hide by default at small screen size
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: $primary-dark-color;
+        border-top: 2px solid white;
+
+        li {
+            padding-bottom: 0.5rem;
+
+            a {
+                color: $primary-light-color;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <script src="https://use.fontawesome.com/ccf38ff5ed.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,25 +19,27 @@
 
 <body>
     <!-- create a navigation bar for all pages -->
-    <nav class="navbar">
-        <div class="logo-and-hamburger">
-            <a href="./index.html" class="navbar-logo">Ji Li</a>
-            <div class="material-symbols-outlined hamburger">menu</div>
+    <nav>
+        <div class="navbar-container">
+            <div class="logo-and-hamburger">
+                <a href="./index.html" class="navbar-logo">Ji Li</a>
+                <div class="material-symbols-outlined hamburger">menu</div>
+            </div>
+            <ul class="navbar-menu">
+                <li>
+                    <a href="./index.html" class="home-button">Home</a>
+                </li>
+                <li>
+                    <a href="./profile.html" class="profile-button">Profile</a>
+                </li>
+                <li>
+                    <a href="./blog.html" class="blog-button">Blog</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="contact-me-button">Contact Me</a>
+                </li>
+            </ul>
         </div>
-        <ul class="navbar-menu">
-            <li>
-                <a href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="./profile.html">Profile</a>
-            </li>
-            <li>
-                <a href="./blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="./contact.html">Contact Me</a>
-            </li>
-        </ul>
     </nav>
     <!-- a sidebar for social media links -->
     <!-- <aside class="sidebar">
@@ -57,24 +58,27 @@
     </aside> -->
     <!-- main section of this html, simple introduction of myself -->
     <main>
-        <section class="intro">
-            <div class="self-intro">
-                <h2>Hello, I am Ji Li</h2>
-                <h2>A Full Stack Web Developer</h2>
-                <h2>Based in Melbourne, Australia</h2>
+        <section class="intro-container">
+            <div class="self-intro-text">
+                <h2>Hello, I am Ji Li.</h2>
+                <h2>A Full Stack Web Developer.</h2>
+                <h2>Based in Melbourne, Australia.</h2>
             </div>
             <div class="landing-page-img">
                 <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93"
                     alt="a picture writes 'do something great'">
             </div>
         </section>
-        <section class="about-me">
-            <article>
+        <section class="about-me-container">
+            <article class="about-me-text">
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime repellat vel commodi maiores,
                     nesciunt in enim eum architecto voluptatibus doloribus ipsam reprehenderit minima? Explicabo
                     mollitia
                     natus deleniti velit error.</p>
+                <button>
+                    <a href="./pages/profile.html">Read More>></a>
+                </button>
             </article>
             <div class="landing-page-img">
                 <img src="https://images.unsplash.com/photo-1516383740770-fbcc5ccbece0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3174&q=80"

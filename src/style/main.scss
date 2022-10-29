@@ -1,6 +1,6 @@
-$primary-light-color: #cccccc;
-$primary-dark-color: #323232;
-$primary-font-family: 'roboto';
+@import './default/default';
+@import './components/header';
+@import './components/footer';
 
 * {
     // reset default setting of box model
@@ -13,51 +13,14 @@ body {
     font-family: $primary-font-family, cursive;
 }
 
-nav {
-    background-color: $primary-dark-color;
-    .logo-and-hamburger {
-        display: flex;
-        padding: 0 0.5rem;
-        justify-content: space-between; //logo and hamburger menu stay at the left and right of the screen
-        align-items: center;
-        .navbar-logo {
-            font-family: 'Island Moments', cursive;
-            font-size: 3rem;
-            color: $primary-light-color;
-            text-decoration: none;
-        }
-        .hamburger {
-            color: $primary-light-color;
-            background: none;
-            border: none;
-        }
-    }
-
-    .navbar-menu {
-        display: none; //hide by default at small screen size
-        list-style: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: $primary-dark-color;
-        border-top: 2px solid white;
-        li {
-            padding-bottom: 0.5rem;
-            a {
-                color: $primary-light-color;
-                font-weight: bold;
-                text-decoration: none;
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
 main {
     padding: 0 0.5rem;
-    .intro {
+
+    .intro-container {
         // position: absolute;
         padding: 2rem 0;
-        .self-intro {
+
+        .self-intro-text {
             h2 {
                 text-align: center;
                 font-weight: bold;
@@ -66,23 +29,27 @@ main {
             }
         }
     }
+
     .landing-page-img {
         img {
             width: 100%;
             height: auto;
         }
     }
-    .about-me {
-        article {
+
+    .about-me-container {
+        .about-me-text {
             display: flex;
             flex-direction: column;
             padding: 0 1rem;
+
             h2 {
                 width: 2rem;
                 overflow: visible;
                 border-top: 1px solid $primary-dark-color;
                 padding: 1rem 0;
             }
+
             p {
                 padding-bottom: 1rem;
             }
@@ -90,35 +57,66 @@ main {
     }
 }
 
-//footer stay the bottom middle
-footer {
-    padding-top: 1rem;
-    width: 100vw;
-    text-align: center;
-    color: #6f6f74;
-}
-
 // at larger screen size:
 @media screen and (min-width: 600px) {
-    .navbar {
+    .home-button {
+        border-bottom: 2px solid $primary-light-color; //add a line under the button to show user which page they are at
+    }
+    .navbar-container {
+        max-width: $max-width;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        .hamburger {
-            display: none; //hide the hamburger button in large screen
+        .logo-and-hamburger {
+            .hamburger {
+                display: none; //hide the hamburger button in large screen
+            }
         }
         .navbar-menu {
             display: flex !important; // navbar display should be flex and stay in the same row with logo
             flex-direction: row;
+            justify-content: space-evenly;
+            flex: 1;
             border: none;
         }
     }
+    main {
+        max-width: $max-width;
+        margin: 0 auto;
+        .intro-container {
+            display: flex;
+            justify-content: space-between;
+            .self-intro-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 5%;
+            }
+            .landing-page-img {
+                width: 60%;
+            }
+        }
 
-    .sidebar {
-        // make the sidebar always at the middle right of the screen
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        right: 0;
-        top: 50%;
+        .about-me-container {
+            display: flex;
+            flex-direction: row-reverse;
+            .about-me-text {
+                justify-content: center;
+                padding: 5%;
+                p {
+                    line-height: 1.5rem;
+                }
+            }
+        }
     }
+
+
+    // .sidebar {
+    //     // make the sidebar always at the middle right of the screen
+    //     display: flex;
+    //     flex-direction: column;
+    //     position: fixed;
+    //     right: 0;
+    //     top: 50%;
+    // }
 }
