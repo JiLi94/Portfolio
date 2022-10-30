@@ -1,6 +1,9 @@
 @import './default/default';
 @import './components/header';
 @import './components/footer';
+@import './components/button';
+@import './components/animation';
+@import './components/sidebar';
 
 * {
     // reset default setting of box model
@@ -11,23 +14,35 @@
 
 body {
     font-family: $primary-font-family, cursive;
+    overflow-x: hidden; //make html not scrollable horizontally
 }
 
 main {
     padding: 0 0.5rem;
+    margin: 0 auto;
 
-    .intro-container {
-        // position: absolute;
-        padding: 2rem 0;
+    .self-intro-container {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
 
         .self-intro-text {
+            background: $primary-background-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+
             h2 {
-                text-align: center;
+                font-size: 1.5rem;
+                // text-align: center;
                 font-weight: bold;
-                color: $primary-dark-color;
                 padding-bottom: 0.5rem;
             }
         }
+
+
     }
 
     .landing-page-img {
@@ -41,8 +56,8 @@ main {
         .about-me-text {
             display: flex;
             flex-direction: column;
-            padding: 0 1rem;
-
+            padding: 2rem 1rem;
+            background: $primary-background-color;
             h2 {
                 width: 2rem;
                 overflow: visible;
@@ -58,65 +73,40 @@ main {
 }
 
 // at larger screen size:
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $media-query-min-width) {
+
     .home-button {
         border-bottom: 2px solid $primary-light-color; //add a line under the button to show user which page they are at
     }
-    .navbar-container {
-        max-width: $max-width;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        .logo-and-hamburger {
-            .hamburger {
-                display: none; //hide the hamburger button in large screen
-            }
-        }
-        .navbar-menu {
-            display: flex !important; // navbar display should be flex and stay in the same row with logo
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex: 1;
-            border: none;
-        }
-    }
+
     main {
-        max-width: $max-width;
-        margin: 0 auto;
-        .intro-container {
-            display: flex;
-            justify-content: space-between;
+        max-width: $max-content-width;
+
+        .self-intro-container {
             .self-intro-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 padding: 5%;
             }
+
             .landing-page-img {
-                width: 60%;
+                background: black;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    height: 40vh;
+                    width: auto;
+                }
             }
         }
 
         .about-me-container {
-            display: flex;
-            flex-direction: row-reverse;
             .about-me-text {
-                justify-content: center;
                 padding: 5%;
+
                 p {
                     line-height: 1.5rem;
                 }
             }
         }
     }
-
-
-    // .sidebar {
-    //     // make the sidebar always at the middle right of the screen
-    //     display: flex;
-    //     flex-direction: column;
-    //     position: fixed;
-    //     right: 0;
-    //     top: 50%;
-    // }
 }

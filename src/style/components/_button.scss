@@ -1,0 +1,21 @@
+button {
+    background: white;
+    width: 7rem;
+    border-radius: 1rem;
+    border-color: $primary-dark-color;
+    padding: 0.2rem 0.4rem;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px $primary-dark-color;
+    a {
+        font-family: $primary-font-family;
+        color: $primary-dark-color;
+        text-decoration: none;
+    }
+    &:hover {
+        background: $primary-dark-color;
+        box-shadow: 2px 2px 2px $primary-light-color;
+        a {
+            color: $primary-light-color;
+        }
+    }
+}

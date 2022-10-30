@@ -12,6 +12,10 @@ nav .logo-and-hamburger .navbar-logo {
   font-size: 3rem;
   color: #cccccc;
   text-decoration: none;
+  transition: 0.5s;
+}
+nav .logo-and-hamburger .navbar-logo:hover {
+  color: white;
 }
 nav .logo-and-hamburger .hamburger {
   color: #cccccc;
@@ -31,18 +35,127 @@ nav .navbar-menu li {
 }
 nav .navbar-menu li a {
   color: #cccccc;
-  font-weight: bold;
   text-decoration: none;
   font-size: 1.5rem;
+  transition: 0.5s;
+}
+nav .navbar-menu li a:hover {
+  color: white;
 }
 
+@media screen and (min-width: 800px) {
+  .navbar-container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+  }
+  .navbar-container .logo-and-hamburger {
+    flex: 1;
+  }
+  .navbar-container .logo-and-hamburger .hamburger {
+    display: none;
+  }
+  .navbar-container .navbar-menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    border: none;
+  }
+}
 footer {
-  padding: 1rem 0;
-  width: 100vw;
+  max-width: 1440px;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+footer div {
   text-align: center;
-  color: #6f6f74;
+  padding-top: 0.5rem;
+  color: #323232;
+  border-top: 1px solid #cccccc;
 }
 
+button {
+  background: white;
+  width: 7rem;
+  border-radius: 1rem;
+  border-color: #323232;
+  padding: 0.2rem 0.4rem;
+  transition: 0.5s;
+  box-shadow: 2px 2px 2px #323232;
+}
+button a {
+  font-family: "roboto";
+  color: #323232;
+  text-decoration: none;
+}
+button:hover {
+  background: #323232;
+  box-shadow: 2px 2px 2px #cccccc;
+}
+button:hover a {
+  color: #cccccc;
+}
+
+.fade-in {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.sidebar ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+.sidebar ul li {
+  list-style: none;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: #323232;
+}
+.sidebar ul li a :hover {
+  color: yellow;
+  transform: scale(1.5);
+}
+
+@media screen and (min-width: 800px) {
+  .sidebar {
+    position: fixed;
+    right: 0;
+    top: 40vh;
+    background: #cccccc;
+    border-radius: 4px;
+    padding: 1rem 0.5rem;
+  }
+  .sidebar ul {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12vh;
+    padding-top: 0;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -51,18 +164,29 @@ footer {
 
 body {
   font-family: "roboto", cursive;
+  overflow-x: hidden;
 }
 
 main {
   padding: 0 0.5rem;
+  margin: 0 auto;
 }
-main .intro-container {
-  padding: 2rem 0;
+main .self-intro-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
 }
-main .intro-container .self-intro-text h2 {
-  text-align: center;
+main .self-intro-container .self-intro-text {
+  background: #fbfbfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+main .self-intro-container .self-intro-text h2 {
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #323232;
   padding-bottom: 0.5rem;
 }
 main .landing-page-img img {
@@ -72,7 +196,8 @@ main .landing-page-img img {
 main .about-me-container .about-me-text {
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
+  background: #fbfbfd;
 }
 main .about-me-container .about-me-text h2 {
   width: 2rem;
@@ -84,49 +209,26 @@ main .about-me-container .about-me-text p {
   padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .home-button {
     border-bottom: 2px solid #cccccc;
   }
-  .navbar-container {
-    max-width: 1460px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .navbar-container .logo-and-hamburger .hamburger {
-    display: none;
-  }
-  .navbar-container .navbar-menu {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex: 1;
-    border: none;
-  }
   main {
-    max-width: 1460px;
-    margin: 0 auto;
+    max-width: 1440px;
   }
-  main .intro-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  main .intro-container .self-intro-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  main .self-intro-container .self-intro-text {
     padding: 5%;
   }
-  main .intro-container .landing-page-img {
-    width: 60%;
-  }
-  main .about-me-container {
+  main .self-intro-container .landing-page-img {
+    background: black;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  main .self-intro-container .landing-page-img img {
+    height: 40vh;
+    width: auto;
   }
   main .about-me-container .about-me-text {
-    justify-content: center;
     padding: 5%;
   }
   main .about-me-container .about-me-text p {

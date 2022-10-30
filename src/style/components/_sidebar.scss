@@ -1,0 +1,35 @@
+.sidebar {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 1rem;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $primary-dark-color;
+                & :hover {
+                    color: yellow;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $media-query-min-width) {
+    .sidebar {
+        position: fixed;
+        right: 0;
+        top: 40vh;
+        background: $primary-light-color;
+        border-radius: 4px;
+        padding: 1rem 0.5rem;
+        ul {
+            flex-direction: column;
+            justify-content: space-between;
+            height: 12vh;
+            padding-top: 0;
+        }
+    }
+}

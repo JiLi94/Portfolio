@@ -1,7 +1,12 @@
 //footer stay the bottom middle
 footer {
-    padding: 1rem 0;
-    width: 100vw;
-    text-align: center;
-    color: #6f6f74;
+    max-width: $max-content-width;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    div {
+        text-align: center;
+        padding-top: 0.5rem;
+        color: $primary-dark-color;
+        border-top: 1px solid $primary-light-color;
+    }
 }
