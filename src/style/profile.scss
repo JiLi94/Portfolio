@@ -1,0 +1,89 @@
+@import './default/default';
+@import './components/button';
+
+main {
+    .self-intro-container {
+        .self-intro-text {
+            .profile-header {
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid $primary-dark-color;
+            }
+        }
+    }
+
+    .experience-container {
+        padding: 2rem 1rem;
+        margin: 0 auto;
+        background: $primary-background-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .experience-header {
+            padding-bottom: 1rem;
+        }
+
+        .experience-job-cards {
+            display: flex;
+            flex-direction: column;
+
+            .job-card {
+                padding: 1rem 1rem;
+                margin: 1rem 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 0.2rem;
+                // border: 1px solid #f2f1f1;
+                background-color: #f9f9fb;
+                transition: 0.4s;
+                font-weight: lighter;
+                position: relative;
+                &:hover {
+                    background: $primary-background-color;
+                    box-shadow: 0px 4px 8px $primary-light-color;
+                    top: -4px;
+                }
+                * {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        .resume-btn {
+            @include btn-style;
+            width: 10rem;
+        }
+
+    }
+}
+
+@media screen and (min-width: $media-query-min-width) {
+    .nav-home-link {
+        border-bottom: none; //add a line under the button to show user which page they are at
+    }
+
+    .nav-profile-link {
+        border-bottom: 2px solid $primary-light-color; //add a line under the button to show user which page they are at
+    }
+
+    main {
+        .self-intro-container{
+            display: flex;
+            flex-direction: row;
+            height: 50vh;
+            .self-intro-text {
+                margin: 0 1rem 0 0;
+            }
+        }
+        .experience-container {
+            .experience-job-cards {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .job-card {
+                    margin: 1rem 1rem;
+                }
+            }
+        }
+    }
+
+}

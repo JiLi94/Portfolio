@@ -45,7 +45,7 @@ main {
 
     }
 
-    .landing-page-img {
+    .landing-page-img, .profile-page-image {
         img {
             width: 100%;
             height: auto;
@@ -65,8 +65,9 @@ main {
                 padding: 1rem 0;
             }
 
-            p {
-                padding-bottom: 1rem;
+            button {
+                @include btn-style;
+                width: 7rem;
             }
         }
     }
@@ -75,7 +76,7 @@ main {
 // at larger screen size:
 @media screen and (min-width: $media-query-min-width) {
 
-    .home-button {
+    .nav-home-link {
         border-bottom: 2px solid $primary-light-color; //add a line under the button to show user which page they are at
     }
 

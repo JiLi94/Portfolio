@@ -9,7 +9,7 @@
                 text-decoration: none;
                 color: $primary-dark-color;
                 & :hover {
-                    color: yellow;
+                    color: #86a9cb;
                     transform: scale(1.5);
                 }
             }
@@ -28,7 +28,7 @@
         ul {
             flex-direction: column;
             justify-content: space-between;
-            height: 12vh;
+            height: 8rem;
             padding-top: 0;
         }
     }

@@ -44,20 +44,20 @@ nav .navbar-menu li a:hover {
 }
 
 @media screen and (min-width: 800px) {
-  .navbar-container {
+  nav .navbar-container {
     max-width: 1440px;
     display: flex;
     justify-content: center;
     padding: 0 0.5rem;
     margin: 0 auto;
   }
-  .navbar-container .logo-and-hamburger {
+  nav .navbar-container .logo-and-hamburger {
     flex: 1;
   }
-  .navbar-container .logo-and-hamburger .hamburger {
+  nav .navbar-container .logo-and-hamburger .hamburger {
     display: none;
   }
-  .navbar-container .navbar-menu {
+  nav .navbar-container .navbar-menu {
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
@@ -75,28 +75,6 @@ footer div {
   padding-top: 0.5rem;
   color: #323232;
   border-top: 1px solid #cccccc;
-}
-
-button {
-  background: white;
-  width: 7rem;
-  border-radius: 1rem;
-  border-color: #323232;
-  padding: 0.2rem 0.4rem;
-  transition: 0.5s;
-  box-shadow: 2px 2px 2px #323232;
-}
-button a {
-  font-family: "roboto";
-  color: #323232;
-  text-decoration: none;
-}
-button:hover {
-  background: #323232;
-  box-shadow: 2px 2px 2px #cccccc;
-}
-button:hover a {
-  color: #cccccc;
 }
 
 .fade-in {
@@ -136,7 +114,7 @@ button:hover a {
   color: #323232;
 }
 .sidebar ul li a :hover {
-  color: yellow;
+  color: #86a9cb;
   transform: scale(1.5);
 }
 
@@ -152,7 +130,7 @@ button:hover a {
   .sidebar ul {
     flex-direction: column;
     justify-content: space-between;
-    height: 12vh;
+    height: 8rem;
     padding-top: 0;
   }
 }
@@ -189,7 +167,7 @@ main .self-intro-container .self-intro-text h2 {
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
-main .landing-page-img img {
+main .landing-page-img img, main .profile-page-image img {
   width: 100%;
   height: auto;
 }
@@ -205,12 +183,31 @@ main .about-me-container .about-me-text h2 {
   border-top: 1px solid #323232;
   padding: 1rem 0;
 }
-main .about-me-container .about-me-text p {
-  padding-bottom: 1rem;
+main .about-me-container .about-me-text button {
+  background: white;
+  border-radius: 1rem;
+  border-color: #323232;
+  padding: 0.2rem 0.4rem;
+  margin-top: 1rem;
+  transition: 0.5s;
+  box-shadow: 2px 2px 2px #323232;
+  width: 7rem;
+}
+main .about-me-container .about-me-text button a {
+  font-family: "roboto";
+  color: #323232;
+  text-decoration: none;
+}
+main .about-me-container .about-me-text button:hover {
+  background: #323232;
+  box-shadow: 2px 2px 2px #cccccc;
+}
+main .about-me-container .about-me-text button:hover a {
+  color: #cccccc;
 }
 
 @media screen and (min-width: 800px) {
-  .home-button {
+  .nav-home-link {
     border-bottom: 2px solid #cccccc;
   }
   main {
