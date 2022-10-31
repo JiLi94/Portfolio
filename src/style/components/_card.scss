@@ -1,0 +1,7 @@
+@mixin card-hover-effect {
+    &:hover {
+        background: $primary-background-color;
+        box-shadow: 0px 4px 8px $primary-light-color;
+        top: -5px; // card moves up by 4px when hovering
+    }
+}

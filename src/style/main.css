@@ -45,7 +45,7 @@ nav .navbar-menu li a:hover {
 
 @media screen and (min-width: 800px) {
   nav .navbar-container {
-    max-width: 1440px;
+    max-width: 1300px;
     display: flex;
     justify-content: center;
     padding: 0 0.5rem;
@@ -66,7 +66,7 @@ nav .navbar-menu li a:hover {
   }
 }
 footer {
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0.5rem auto;
   padding: 0.5rem;
 }
@@ -179,31 +179,48 @@ main .about-me-container .about-me-text {
 }
 main .about-me-container .about-me-text h2 {
   width: 2rem;
-  overflow: visible;
+  overflow-y: visible;
   border-top: 1px solid #323232;
   padding: 1rem 0;
 }
 main .about-me-container .about-me-text button {
   background: white;
-  border-radius: 1rem;
+  border-radius: 8px;
   border-color: #323232;
-  padding: 0.2rem 0.4rem;
+  padding: 4px 10px;
   margin-top: 1rem;
   transition: 0.5s;
-  box-shadow: 2px 2px 2px #323232;
+  box-shadow: 2px 2px 2px #cccccc;
+  position: relative;
   width: 7rem;
 }
 main .about-me-container .about-me-text button a {
   font-family: "roboto";
   color: #323232;
   text-decoration: none;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+main .about-me-container .about-me-text button::after {
+  content: ">>";
+  opacity: 0;
+  position: absolute;
+  color: #cccccc;
+  top: 6px;
+  right: -15px;
+  transition: 0.5s;
 }
 main .about-me-container .about-me-text button:hover {
   background: #323232;
-  box-shadow: 2px 2px 2px #cccccc;
+  padding-left: 0;
+  padding-right: 15px;
 }
 main .about-me-container .about-me-text button:hover a {
   color: #cccccc;
+}
+main .about-me-container .about-me-text button:hover::after {
+  opacity: 1;
+  right: 5px;
 }
 
 @media screen and (min-width: 800px) {
@@ -211,10 +228,11 @@ main .about-me-container .about-me-text button:hover a {
     border-bottom: 2px solid #cccccc;
   }
   main {
-    max-width: 1440px;
+    max-width: 1300px;
   }
   main .self-intro-container .self-intro-text {
     padding: 5%;
+    text-align: center;
   }
   main .self-intro-container .landing-page-img {
     background: black;

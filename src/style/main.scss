@@ -60,7 +60,8 @@ main {
             background: $primary-background-color;
             h2 {
                 width: 2rem;
-                overflow: visible;
+                // overflow-x: visible;
+                overflow-y: visible;
                 border-top: 1px solid $primary-dark-color;
                 padding: 1rem 0;
             }
@@ -86,6 +87,7 @@ main {
         .self-intro-container {
             .self-intro-text {
                 padding: 5%;
+                text-align: center;
             }
 
             .landing-page-img {
