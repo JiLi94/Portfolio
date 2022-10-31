@@ -25,6 +25,10 @@ main .card .card-body .card-content {
   padding: 0 1rem 1rem 1rem;
   font-weight: lighter;
 }
+main .card .card-body .card-date {
+  font-style: italic;
+  font-size: smaller;
+}
 
 @media screen and (min-width: 800px) {
   .nav-home-link {
@@ -35,13 +39,12 @@ main .card .card-body .card-content {
   }
   main {
     margin-top: 3vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   main .card {
-    width: 90%;
+    width: 25%;
   }
   main .card .card-img img {
     height: 20vh;

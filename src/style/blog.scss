@@ -29,6 +29,10 @@ main {
                 padding: 0 1rem 1rem 1rem;
                 font-weight: lighter;
             }
+            .card-date {
+                font-style: italic;
+                font-size: smaller;
+            }
         }
     }
 }
@@ -42,21 +46,36 @@ main {
         border-bottom: 2px solid $primary-light-color; //add a line under the button to show user which page they are at
     }
 
+    // main {
+    //     margin-top: 3vh;
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr;
+    //     // grid-auto-rows: minmax(100px, auto);
+    //     justify-items: center;
+    //     // margin: 0 10rem;
+    //     .card {
+    //         width: 90%;
+            
+    //         .card-img {
+    //             img {
+    //                 height: 20vh;
+    //             }
+    //         }
+    //     }
+    // }
     main {
         margin-top: 3vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: minmax(100px, auto);
-        justify-items: center;
-        // margin: 0 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
         .card {
-            width: 90%;
-            
+            width: 25%;
             .card-img {
                 img {
                     height: 20vh;
                 }
             }
+
         }
     }
 

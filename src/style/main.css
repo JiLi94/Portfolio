@@ -161,11 +161,13 @@ main .self-intro-container .self-intro-text {
   justify-content: center;
   padding: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 main .self-intro-container .self-intro-text h2 {
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 0.5rem;
+  font-style: italic;
 }
 main .landing-page-img img, main .profile-page-image img {
   width: 100%;
@@ -232,7 +234,6 @@ main .about-me-container .about-me-text button:hover::after {
   }
   main .self-intro-container .self-intro-text {
     padding: 5%;
-    text-align: center;
   }
   main .self-intro-container .landing-page-img {
     background: black;
