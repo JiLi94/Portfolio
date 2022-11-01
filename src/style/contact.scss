@@ -1,0 +1,95 @@
+@import './default/default';
+@import './components/button';
+
+main {
+    padding: 1.5rem;
+
+    .contact-intro {
+        text-align: center;
+
+        h2 {
+            padding-top: 1rem;
+            font-weight: lighter;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        input,
+        textarea {
+            height: 3rem;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            padding-left: 0.5rem;
+            font-family: inherit;
+            font-weight: lighter;
+
+            &:focus::placeholder {
+                color: transparent; //hide the placeholder when focus
+            }
+        }
+
+        textarea {
+            height: 6rem;
+            padding-top: 0.5rem;
+        }
+
+        label {
+            display: none;
+        }
+
+        .submit {
+            @include btn-style;
+            width: 5rem;
+            text-align: center;
+        }
+    }
+
+    .contact-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4,
+        h2 {
+            padding-top: 1rem;
+        }
+
+        ul {
+            li {
+                padding-top: 1rem;
+                list-style: none;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $media-query-min-width) {
+    .nav-home-link {
+        border-bottom: none; //currently at blog page, so remove the line under 'home'
+    }
+
+    .nav-contact-link {
+        border-bottom: 2px solid $primary-light-color; //add a line under the button to show user which page they are at
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        form {
+            grid-row: 1/3;
+            grid-column: 2;
+            border-left: 1px solid $primary-dark-color;
+        }
+    }
+
+}

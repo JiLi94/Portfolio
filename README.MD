@@ -1,3 +1,9 @@
+## Portfolio URL
+[Ji Li's Portfolio](https://ji-li-portfolio.netlify.app/)
+
+## Github Repo
+[JiLi_T1A2](https://github.com/JiLi94/JiLi_T1A2.git)
+
 
 
 ## Reference

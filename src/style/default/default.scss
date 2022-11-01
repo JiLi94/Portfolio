@@ -4,3 +4,28 @@ $primary-background-color: #fbfbfd;
 $primary-font-family: 'roboto';
 $media-query-min-width: 800px;
 $max-content-width: 1300px;
+
+* {
+    // reset default setting of box model
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font-family, cursive;
+    overflow-x: hidden; //make html not scrollable horizontally
+}
+
+main {
+    padding: 0 0.5rem;
+    margin: 0 auto;
+}
+
+// at larger screen size:
+@media screen and (min-width: $media-query-min-width) {
+    main {
+        max-width: $max-content-width;
+    }
+    
+}
