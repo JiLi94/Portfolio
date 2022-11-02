@@ -20,102 +20,90 @@ main {
   }
 }
 main {
-  padding: 1.5rem;
+  padding-top: 1.5rem;
 }
-main .contact-intro {
-  text-align: center;
-}
-main .contact-intro h2 {
-  padding-top: 1rem;
+main .contact-intro p {
+  font-size: 1.2rem;
   font-weight: lighter;
+  padding: 1rem 0;
 }
-main form {
+main .contact-intro ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+main .contact-intro ul li a {
+  text-decoration: none;
+  color: black;
+}
+main .contact-intro img {
+  width: 100%;
+}
+main .contact-form-container {
+  padding-top: 1rem;
+}
+main .contact-form-container p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+main .contact-form-container form {
   display: flex;
   flex-direction: column;
 }
-main form input,
-main form textarea {
+main .contact-form-container form .name, main .contact-form-container form .phone-and-email {
+  display: flex;
+  flex-direction: column;
+}
+main .contact-form-container form .input {
   height: 3rem;
-  font-size: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   padding-left: 0.5rem;
   font-family: inherit;
   font-weight: lighter;
+  font-size: 1.2rem;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-bottom-color: #323232;
+  border-bottom-width: 1px;
 }
-main form input:focus::-moz-placeholder, main form textarea:focus::-moz-placeholder {
+main .contact-form-container form .input::-moz-placeholder {
+  font-style: italic;
+}
+main .contact-form-container form .input:-ms-input-placeholder {
+  font-style: italic;
+}
+main .contact-form-container form .input::placeholder {
+  font-style: italic;
+}
+main .contact-form-container form .input:focus::-moz-placeholder {
   color: transparent;
 }
-main form input:focus:-ms-input-placeholder, main form textarea:focus:-ms-input-placeholder {
+main .contact-form-container form .input:focus:-ms-input-placeholder {
   color: transparent;
 }
-main form input:focus::placeholder,
-main form textarea:focus::placeholder {
+main .contact-form-container form .input:focus::placeholder {
   color: transparent;
 }
-main form textarea {
-  height: 6rem;
-  padding-top: 0.5rem;
+main .contact-form-container form .input:focus {
+  outline: none;
 }
-main form label {
-  display: none;
-}
-main form .submit {
-  background: white;
-  border-radius: 8px;
-  border-color: #323232;
-  padding: 4px 10px;
-  margin-top: 1rem;
-  transition: 0.5s;
-  box-shadow: 2px 2px 2px #cccccc;
-  position: relative;
-  width: 5rem;
-  text-align: center;
-}
-main form .submit a {
-  font-family: "roboto";
-  color: #323232;
-  text-decoration: none;
+main .contact-form-container form .submit {
+  height: 3rem;
+  font-family: inherit;
   font-weight: lighter;
-  font-size: 1rem;
-}
-main form .submit::after {
-  content: ">>";
-  opacity: 0;
-  position: absolute;
-  color: #cccccc;
-  top: 6px;
-  right: -15px;
-  transition: 0.5s;
-}
-main form .submit:hover {
-  background: #323232;
+  font-size: 1.2rem;
+  width: 100%;
   padding-left: 0;
-  padding-right: 15px;
+  margin: 1.2rem auto;
+  background-color: white;
+  border: 1px solid #323232;
 }
-main form .submit:hover a {
-  color: #cccccc;
-}
-main form .submit:hover::after {
-  opacity: 1;
-  right: 5px;
-}
-main .contact-detail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .contact-detail h4,
-main .contact-detail h2 {
-  padding-top: 1rem;
-}
-main .contact-detail ul li {
-  padding-top: 1rem;
-  list-style: none;
-  text-align: center;
-}
-main .contact-detail ul li a {
-  text-decoration: none;
-  color: black;
+main .contact-form-container form .submit:hover {
+  background-color: black;
+  color: white;
 }
 
 @media screen and (min-width: 800px) {
@@ -126,13 +114,41 @@ main .contact-detail ul li a {
     border-bottom: 2px solid #cccccc;
   }
   main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
   }
-  main form {
-    grid-row: 1/3;
-    grid-column: 2;
-    border-left: 1px solid #323232;
+  main .contact-intro {
+    position: relative;
+  }
+  main .contact-intro .intro-text {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+  }
+  main .contact-intro .intro-text h1 {
+    font-size: 4rem;
+    width: 20rem;
+  }
+  main .contact-intro .intro-text p {
+    font-size: 1.5rem;
+  }
+  main .contact-intro .intro-text ul li {
+    font-size: 1.5rem;
+  }
+  main .contact-intro .intro-text ul li a {
+    color: white;
+  }
+  main .contact-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .contact-form-container form .name, main .contact-form-container form .phone-and-email {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .contact-form-container form .name :first-child, main .contact-form-container form .phone-and-email :first-child {
+    margin-right: 1rem;
   }
 }/*# sourceMappingURL=contact.css.map */

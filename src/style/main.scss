@@ -14,7 +14,7 @@ main {
         flex-direction: column;
 
         .self-intro-text {
-            background: $pri;
+            background: $primary-background-color;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -35,7 +35,8 @@ main {
 
     }
 
-    .landing-page-img, .profile-page-image {
+    .landing-page-img,
+    .profile-page-image {
         img {
             width: 100%;
             height: auto;
@@ -48,6 +49,7 @@ main {
             flex-direction: column;
             padding: 2rem 1rem;
             background: $primary-background-color;
+
             h2 {
                 width: 2rem;
                 // overflow-x: visible;
@@ -74,7 +76,7 @@ main {
     main {
         .self-intro-container {
             .self-intro-text {
-                padding: 5%;
+                padding: 2%;
             }
 
             .landing-page-img {
@@ -91,7 +93,7 @@ main {
 
         .about-me-container {
             .about-me-text {
-                padding: 5%;
+                padding: 2% 5%;
 
                 p {
                     line-height: 1.5rem;

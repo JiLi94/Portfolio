@@ -1,3 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", cursive;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    max-width: 1300px;
+  }
+}
 nav {
   background-color: #323232;
 }
@@ -134,21 +155,6 @@ footer div {
     padding-top: 0;
   }
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "roboto", cursive;
-  overflow-x: hidden;
-}
-
-main {
-  padding: 0 0.5rem;
-  margin: 0 auto;
-}
 main .self-intro-container {
   padding: 1rem 0;
   display: flex;
@@ -169,7 +175,8 @@ main .self-intro-container .self-intro-text h2 {
   padding-bottom: 0.5rem;
   font-style: italic;
 }
-main .landing-page-img img, main .profile-page-image img {
+main .landing-page-img img,
+main .profile-page-image img {
   width: 100%;
   height: auto;
 }
@@ -229,11 +236,8 @@ main .about-me-container .about-me-text button:hover::after {
   .nav-home-link {
     border-bottom: 2px solid #cccccc;
   }
-  main {
-    max-width: 1300px;
-  }
   main .self-intro-container .self-intro-text {
-    padding: 5%;
+    padding: 2%;
   }
   main .self-intro-container .landing-page-img {
     background: black;
@@ -245,7 +249,7 @@ main .about-me-container .about-me-text button:hover::after {
     width: auto;
   }
   main .about-me-container .about-me-text {
-    padding: 5%;
+    padding: 2% 5%;
   }
   main .about-me-container .about-me-text p {
     line-height: 1.5rem;

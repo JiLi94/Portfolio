@@ -1,3 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", cursive;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    max-width: 1300px;
+  }
+}
 main .self-intro-container .self-intro-text h2 {
   width: 2rem;
   overflow: visible;
