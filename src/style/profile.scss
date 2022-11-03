@@ -15,6 +15,7 @@ main {
 
             p {
                 text-align: start;
+                font-weight: lighter
             }
 
             .resume-btn {
@@ -90,10 +91,15 @@ main {
         .self-intro-container {
             display: flex;
             flex-direction: row; //text and image shown horizontally for large screen size
-            height: 50vh;
+            height: 50%;
 
             .self-intro-text {
                 margin: 0 1rem 0 0;
+            }
+
+            img {
+                width: 50%;
+                height: auto;
             }
         }
 
@@ -104,10 +110,12 @@ main {
                 .card-container {
                     flex-direction: row; //cards shown horizontally for large screen size
                     justify-content: space-evenly;
+                    flex-wrap: wrap;
 
                     .card {
                         margin: 1rem 1rem;
                         flex: 1;
+                        min-width: 300px;
                     }
                 }
             }

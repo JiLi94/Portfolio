@@ -49,13 +49,17 @@ main {
             flex-direction: column;
             padding: 2rem 1rem;
             background: $primary-background-color;
-
             h2 {
                 width: 2rem;
                 // overflow-x: visible;
                 overflow-y: visible;
                 border-top: 1px solid $primary-dark-color;
                 padding: 1rem 0;
+                font-style: italic;
+            }
+
+            p {
+                font-weight: lighter
             }
 
             button {
@@ -92,9 +96,11 @@ main {
         }
 
         .about-me-container {
+            min-height: 30vh;
+            display: flex;
             .about-me-text {
+                flex: 1;
                 padding: 2% 5%;
-
                 p {
                     line-height: 1.5rem;
                 }

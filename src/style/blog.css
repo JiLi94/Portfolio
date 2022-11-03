@@ -73,6 +73,7 @@ main .card .card-body .card-date {
   }
   main .card {
     width: 25%;
+    min-width: 300px;
   }
   main .card .card-img img {
     height: 20vh;

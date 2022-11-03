@@ -191,6 +191,10 @@ main .about-me-container .about-me-text h2 {
   overflow-y: visible;
   border-top: 1px solid #323232;
   padding: 1rem 0;
+  font-style: italic;
+}
+main .about-me-container .about-me-text p {
+  font-weight: lighter;
 }
 main .about-me-container .about-me-text button {
   background: white;
@@ -248,7 +252,12 @@ main .about-me-container .about-me-text button:hover::after {
     height: 40vh;
     width: auto;
   }
+  main .about-me-container {
+    min-height: 30vh;
+    display: flex;
+  }
   main .about-me-container .about-me-text {
+    flex: 1;
     padding: 2% 5%;
   }
   main .about-me-container .about-me-text p {
