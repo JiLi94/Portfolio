@@ -1,4 +1,5 @@
 @import './default/default';
+@import './components/button';
 
 main {
     article {
@@ -7,6 +8,7 @@ main {
 
         .article-image {
             padding: 0 1rem;
+
             img {
                 width: 100%;
                 height: 20vh;
@@ -30,6 +32,26 @@ main {
 
         }
     }
+
+    .back-btn {
+        button { //same button style with prev pages but modify some animations
+            @include btn-style;
+            margin: 0 1rem;
+            width: 10rem;
+            &::after { 
+                content: '<<'; //add arrow after hovering
+                right: 150px;
+            }
+            &:hover {
+                padding-left: 18px;
+                padding-right: 0;
+            }
+            &:hover::after {
+                right: 130px;
+            }
+        }
+
+    }
 }
 
 @media screen and (min-width: $media-query-min-width) {
@@ -46,11 +68,16 @@ main {
             width: 60%;
             margin-left: auto;
             margin-right: auto;
+
             .article-image {
                 img {
-                    height: 30vh;
+                    height: 40vh;
                 }
             }
+        }
+        .back-btn {
+            width: 60%;
+            margin: 0 auto;
         }
     }
 }

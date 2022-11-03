@@ -91,6 +91,7 @@ main .profile-container .experience-container .card-container,
 main .profile-container .education-container .card-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 main .profile-container .experience-container .card-container .card,
 main .profile-container .education-container .card-container .card {
@@ -116,6 +117,9 @@ main .profile-container .experience-container .card-container .card *,
 main .profile-container .education-container .card-container .card * {
   padding-bottom: 1rem;
 }
+main .profile-container .education-container {
+  padding-top: 0;
+}
 
 @media screen and (min-width: 800px) {
   .nav-home-link {
@@ -135,10 +139,11 @@ main .profile-container .education-container .card-container .card * {
   main .profile-container .experience-container .card-container,
 main .profile-container .education-container .card-container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   main .profile-container .experience-container .card-container .card,
 main .profile-container .education-container .card-container .card {
     margin: 1rem 1rem;
+    flex: 1;
   }
 }/*# sourceMappingURL=profile.css.map */

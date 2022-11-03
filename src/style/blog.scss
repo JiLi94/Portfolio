@@ -11,6 +11,18 @@ main {
         position: relative;
         transition: 1s;
         @include card-hover-effect;
+
+        a {
+            text-decoration: none;
+            color: $primary-dark-color;
+        }
+
+        &:hover {
+            a {
+                color: #3d83aa;
+            }
+        }
+
         .card-img {
             img {
                 width: 100%;
@@ -29,6 +41,7 @@ main {
                 padding: 0 1rem 1rem 1rem;
                 font-weight: lighter;
             }
+
             .card-date {
                 font-style: italic;
                 font-size: smaller;
@@ -36,6 +49,7 @@ main {
         }
     }
 }
+
 
 @media screen and (min-width: $media-query-min-width) {
     .nav-home-link {
@@ -55,7 +69,7 @@ main {
     //     // margin: 0 10rem;
     //     .card {
     //         width: 90%;
-            
+
     //         .card-img {
     //             img {
     //                 height: 20vh;
@@ -68,8 +82,10 @@ main {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+
         .card {
             width: 25%;
+
             .card-img {
                 img {
                     height: 20vh;

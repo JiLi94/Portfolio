@@ -4,19 +4,22 @@ main {
     padding-top: 1.5rem;
 
     .contact-intro {
+        h1 {
+            padding-bottom: 1rem;
+        }
         p {
             font-size: 1.2rem;
             font-weight: lighter;
-            padding: 1rem 0;
+            // padding: 1rem 0;
         }
 
         ul {
-
+            padding-bottom: 1rem;
             li {
                 list-style: none;
                 font-size: 1.2rem;
                 font-weight: lighter;
-                padding-bottom: 1rem;
+                // padding-bottom: 1rem;
 
                 a {
                     text-decoration: none;
@@ -106,8 +109,8 @@ main {
             position: relative;
             .intro-text {
                 position: absolute; //text stays on top of the image
-                top: 10%;
-                left: 5%;
+                top: 12%;
+                left: 8%;
                 color: white; //text color change to white so it can be clearly shown on image
                 h1 {
                     font-size: 4rem;

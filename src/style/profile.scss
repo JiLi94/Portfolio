@@ -46,6 +46,7 @@ main {
             .card-container {
                 display: flex;
                 flex-direction: column; //all cards shown vertically at small screen size
+                width: 100%;
 
                 .card {
                     //one card for each working/education experience
@@ -68,6 +69,9 @@ main {
                     }
                 }
             }
+        }
+        .education-container {
+            padding-top: 0;
         }
 
     }
@@ -99,11 +103,11 @@ main {
             .education-container {
                 .card-container {
                     flex-direction: row; //cards shown horizontally for large screen size
-                    // flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: space-evenly;
 
                     .card {
                         margin: 1rem 1rem;
+                        flex: 1;
                     }
                 }
             }

@@ -44,6 +44,57 @@ main article .article-content {
   font-weight: 200;
   line-height: 1.5rem;
 }
+main .back-btn button {
+  background: white;
+  border-radius: 8px;
+  border-color: #323232;
+  padding: 4px 10px;
+  margin-top: 1rem;
+  transition: 0.5s;
+  box-shadow: 2px 2px 2px #cccccc;
+  position: relative;
+  margin: 0 1rem;
+  width: 10rem;
+}
+main .back-btn button a {
+  font-family: "roboto";
+  color: #323232;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+main .back-btn button::after {
+  content: ">>";
+  opacity: 0;
+  position: absolute;
+  color: #cccccc;
+  top: 6px;
+  right: -15px;
+  transition: 0.5s;
+}
+main .back-btn button:hover {
+  background: #323232;
+  padding-left: 0;
+  padding-right: 15px;
+}
+main .back-btn button:hover a {
+  color: #cccccc;
+}
+main .back-btn button:hover::after {
+  opacity: 1;
+  right: 5px;
+}
+main .back-btn button::after {
+  content: "<<";
+  right: 150px;
+}
+main .back-btn button:hover {
+  padding-left: 18px;
+  padding-right: 0;
+}
+main .back-btn button:hover::after {
+  right: 130px;
+}
 
 @media screen and (min-width: 800px) {
   .nav-home-link {
@@ -58,6 +109,10 @@ main article .article-content {
     margin-right: auto;
   }
   main article .article-image img {
-    height: 30vh;
+    height: 40vh;
+  }
+  main .back-btn {
+    width: 60%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=blog-detail.css.map */
