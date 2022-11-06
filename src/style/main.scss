@@ -2,12 +2,11 @@
 @import './components/header';
 @import './components/footer';
 @import './components/button';
-@import './components/animation';
+@import './components/fade_in_animation';
 @import './components/sidebar';
 
-
-
 main {
+    // styles for the self intro texts in Home page
     .self-intro-container {
         padding: 1rem 0;
         display: flex;
@@ -24,10 +23,8 @@ main {
 
             h2 {
                 font-size: 1.5rem;
-                // text-align: center;
                 font-weight: bold;
                 padding-bottom: 0.5rem;
-                // color: $primary-light-color;
                 font-style: italic;
             }
         }
@@ -42,16 +39,16 @@ main {
             height: auto;
         }
     }
-
+    // styles for the 'about me' section in the Home page
     .about-me-container {
         .about-me-text {
             display: flex;
             flex-direction: column;
             padding: 2rem 1rem;
             background: $primary-background-color;
+
             h2 {
                 width: 2rem;
-                // overflow-x: visible;
                 overflow-y: visible;
                 border-top: 1px solid $primary-dark-color;
                 padding: 1rem 0;
@@ -82,7 +79,7 @@ main {
             .self-intro-text {
                 padding: 2%;
             }
-
+            // the image div will change size depending on the screen size
             .landing-page-img {
                 background: black;
                 display: flex;
@@ -98,9 +95,11 @@ main {
         .about-me-container {
             min-height: 30vh;
             display: flex;
+
             .about-me-text {
-                flex: 1;
+                flex: 1; 
                 padding: 2% 5%;
+
                 p {
                     line-height: 1.5rem;
                 }

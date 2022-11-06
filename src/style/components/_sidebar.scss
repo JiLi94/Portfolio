@@ -1,3 +1,4 @@
+// On small screen sizes, the sidebar will be located at the bottom of the page and sit together with the footer
 .sidebar {
     ul {
         display: flex;
@@ -16,7 +17,7 @@
         }
     }
 }
-
+//move to the middle right of the page at larger screen sizes
 @media screen and (min-width: $media-query-min-width) {
     .sidebar {
         position: fixed;

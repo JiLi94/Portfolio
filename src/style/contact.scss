@@ -1,13 +1,16 @@
 @import './default/default';
 
 main {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 
+    // for the contact info and image in the Contact Me page
     .contact-intro {
         background: $primary-background-color;
+
         h1 {
             padding-bottom: 1rem;
         }
+
         p {
             font-size: 1.2rem;
             font-weight: lighter;
@@ -16,6 +19,7 @@ main {
 
         ul {
             padding-bottom: 1rem;
+
             li {
                 list-style: none;
                 font-size: 1.2rem;
@@ -34,21 +38,27 @@ main {
         }
     }
 
+    // the styles for contact form
     .contact-form-container {
         padding-top: 1rem;
         background-color: $primary-background-color;
+
         p {
             font-size: 1.2rem;
             font-weight: lighter;
             font-style: italic;
         }
+
         form {
             display: flex;
             flex-direction: column;
-            .name, .phone-and-email {
+
+            .name,
+            .phone-and-email {
                 display: flex;
                 flex-direction: column;
             }
+
             .input {
                 height: 3rem;
                 margin-top: 1.2rem;
@@ -56,6 +66,7 @@ main {
                 font-family: inherit;
                 font-weight: lighter;
                 font-size: 1.2rem;
+                // only remain the bottom border of the input element
                 border-top-style: hidden;
                 border-left-style: hidden;
                 border-right-style: hidden;
@@ -76,6 +87,7 @@ main {
                 }
             }
 
+            // add styles for the send button
             .submit {
                 height: 3rem;
                 font-family: inherit;
@@ -87,6 +99,7 @@ main {
                 background-color: white;
                 color: black;
                 border: 1px solid $primary-dark-color;
+
                 &:hover {
                     background-color: black;
                     color: white;
@@ -109,23 +122,30 @@ main {
     main {
         display: flex;
         flex-direction: column;
+
+        // when on larger screens, the text will locate on the image
         .contact-intro {
             position: relative;
+
             .intro-text {
                 position: absolute; //text stays on top of the image
                 top: 8%;
                 left: 8%;
                 color: white; //text color change to white so it can be clearly shown on image
+
                 h1 {
                     font-size: 4rem;
                     width: 20rem;
                 }
+
                 p {
                     font-size: 1.5rem;
                 }
+
                 ul {
                     li {
                         font-size: 1.5rem;
+
                         a {
                             color: white;
                         }
@@ -133,25 +153,27 @@ main {
                 }
             }
         }
+
         .contact-form-container {
             display: flex;
             min-height: 50vh;
-            // height: 100%;
-            // flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            // align-content: center;
             flex-wrap: wrap;
+
             form {
                 display: flex;
                 min-height: 40vh;
                 flex-direction: column;
                 justify-content: space-between;
-                .name,.phone-and-email {
-                    // padding: 1.5rem;
+                // first name and last name, email and phone will stay at the same row at larger screens
+                .name,
+                .phone-and-email {
                     flex-direction: row;
                     justify-content: space-between;
+
                     & :first-child {
+                        //add margin between two elements
                         margin-right: 1rem;
                     }
                 }

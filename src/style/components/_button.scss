@@ -1,3 +1,4 @@
+//default button style 
 @mixin btn-style {
     background: white;
     border-radius: 8px;
@@ -15,7 +16,7 @@
         font-size: 1rem;
     }
     &::after { 
-        content: '>>'; //add arrow after hovering
+        content: '>>'; //add two arrows after hovering
         opacity: 0; //hide when not hovering
         position: absolute;
         color: $primary-light-color;
@@ -26,7 +27,7 @@
     &:hover {
         background: $primary-dark-color;
         padding-left: 0;
-        padding-right: 15px;
+        padding-right: 15px; //move left to give space for the arrows added above
         a {
             color: $primary-light-color;
         }

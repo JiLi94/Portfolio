@@ -20,7 +20,7 @@ main {
   }
 }
 main {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 main .contact-intro {
   background: #fbfbfd;
@@ -60,7 +60,8 @@ main .contact-form-container form {
   display: flex;
   flex-direction: column;
 }
-main .contact-form-container form .name, main .contact-form-container form .phone-and-email {
+main .contact-form-container form .name,
+main .contact-form-container form .phone-and-email {
   display: flex;
   flex-direction: column;
 }
@@ -162,11 +163,13 @@ main .contact-form-container form .submit:hover {
     flex-direction: column;
     justify-content: space-between;
   }
-  main .contact-form-container form .name, main .contact-form-container form .phone-and-email {
+  main .contact-form-container form .name,
+main .contact-form-container form .phone-and-email {
     flex-direction: row;
     justify-content: space-between;
   }
-  main .contact-form-container form .name :first-child, main .contact-form-container form .phone-and-email :first-child {
+  main .contact-form-container form .name :first-child,
+main .contact-form-container form .phone-and-email :first-child {
     margin-right: 1rem;
   }
 }/*# sourceMappingURL=contact.css.map */

@@ -19,6 +19,28 @@ main {
     max-width: 1300px;
   }
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.2rem;
+  background-color: #f9f9fb;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  font-weight: lighter;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+.card:hover {
+  background: #fbfbfd;
+  box-shadow: 0px 4px 8px #cccccc;
+  top: -5px;
+}
+.card * {
+  padding-bottom: 1rem;
+}
+
 main .self-intro-container .self-intro-text h2 {
   width: 2rem;
   overflow: visible;
@@ -93,30 +115,6 @@ main .profile-container .education-container .card-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-main .profile-container .experience-container .card-container .card,
-main .profile-container .education-container .card-container .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 0.2rem;
-  background-color: #f9f9fb;
-  padding: 1rem 1rem;
-  margin: 1rem 0;
-  font-weight: lighter;
-  text-align: center;
-  position: relative;
-  transition: 0.5s;
-}
-main .profile-container .experience-container .card-container .card:hover,
-main .profile-container .education-container .card-container .card:hover {
-  background: #fbfbfd;
-  box-shadow: 0px 4px 8px #cccccc;
-  top: -5px;
-}
-main .profile-container .experience-container .card-container .card *,
-main .profile-container .education-container .card-container .card * {
-  padding-bottom: 1rem;
 }
 main .profile-container .education-container {
   padding-top: 0;

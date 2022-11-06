@@ -1,3 +1,4 @@
+// for smaller screens, the nav bar will collapse into a hamburger menu
 nav {
     background-color: $primary-dark-color;
 
@@ -27,7 +28,7 @@ nav {
     }
 
     .navbar-menu {
-        display: none; //hide by default at small screen size
+        display: none; //hide the menu by default at small screen size (will collapse into a hamburger menu)
         list-style: none;
         flex-direction: column;
         align-items: center;
@@ -52,7 +53,7 @@ nav {
     }
 }
 
-//for larger screen size:
+//for larger screen size, the menu will show on the header for user to select
 @media screen and (min-width: $media-query-min-width) {
     nav {
         .navbar-container {

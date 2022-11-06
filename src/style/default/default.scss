@@ -5,8 +5,8 @@ $primary-font-family: 'roboto';
 $media-query-min-width: 800px;
 $max-content-width: 1300px;
 
+// reset default setting of box model
 * {
-    // reset default setting of box model
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -27,5 +27,5 @@ main {
     main {
         max-width: $max-content-width;
     }
-    
+
 }

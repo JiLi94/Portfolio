@@ -48,27 +48,7 @@ main {
                 display: flex;
                 flex-direction: column; //all cards shown vertically at small screen size
                 width: 100%;
-
-                .card {
-                    //one card for each working/education experience
-                    display: flex;
-                    flex-direction: column; //text and header shown vertically within the card
-                    align-items: center;
-                    border-radius: 0.2rem;
-                    // border: 1px solid #f2f1f1;
-                    background-color: #f9f9fb;
-                    padding: 1rem 1rem;
-                    margin: 1rem 0;
-                    font-weight: lighter;
-                    text-align: center;
-                    position: relative; //for hover effect below
-                    transition: 0.5s;
-                    @include card-hover-effect;
-
-                    * {
-                        padding-bottom: 1rem;
-                    }
-                }
+                
             }
         }
         .education-container {

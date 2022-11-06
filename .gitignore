@@ -1,4 +1,3 @@
-.gitignore
 src/style/main.css.map
 src/style/default/default.css
 src/style/default/default.css.map
@@ -6,3 +5,4 @@ src/style/profile.css.map
 src/style/blog.css.map
 src/style/blog-detail.css.map
 src/style/contact.css.map
+ppt
