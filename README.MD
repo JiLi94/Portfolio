@@ -3,14 +3,15 @@
 ## Portfolio URL
 [Ji Li's Portfolio](https://ji-li-portfolio.netlify.app/)
 
-## Github Repo
+## GitHub Repo
 [JiLi_T1A2](https://github.com/JiLi94/JiLi_T1A2.git)
 
 ## Presentation Video
+[Ji Li - Portfolio website design presentation](https://youtu.be/FMwmtBQZurI)
 
 ## Description of the portfolio website
 ### Purpose
-The purpose is to create a portfolio website to demonstrate my web development skills, and introduce myself to potential employers that I am a self-motivated person with positive working attitude, and equipped with various abilities, including technical knowledge in various industries such as information, engineering and energy sector. 
+The purpose is to create a portfolio website to demonstrate my web development skills, and introduce myself to potential employers that I am a self-motivated person with positive working attitudes, and equipped with various abilities, including technical knowledge in various industries such as information, engineering and energy sector. 
 
 ### Target audience
 The target audience for the portfolio website is an employer looking to engage a dev and/or IT professional. And the employer has the following knowledge and expectations:
@@ -21,12 +22,12 @@ The target audience for the portfolio website is an employer looking to engage a
 
 ### Functionality / features
 - The website contains four main pages: home, profile, blog and contact me. Users can navigate through different pages using the nav bar on the top of the page. The logo of the website is also my name, and by clicking it the user can also return to the home page of the portfolio.
-    - Home page: includes simple introduction of myself and a 'read more' button. User can click this button to go to the'profile' page
-    - Profile page: includes a introduction to my experiences and education and a link to download my resume
+    - Home page: includes a simple introduction of myself and a 'read more' button. Users can click this button to go to the 'profile' page
+    - Profile page: includes an introduction to my experiences and education and a link to download my resume
     - Blog page: includes 5 blog cards where user can click them and read the articles
     - Contact Me page: includes my personal contact details and a form in case anyone would like to message me via the website
 
-- The website is based on responsive and mobile-first design, and will respond and re-organise contents to different screen sizes to ensure the user can browse the website using different devices. See examples below:
+- The website is based on a responsive and mobile-first design, and will respond and re-organise contents to different screen sizes to ensure the user can browse the website using different devices. See examples below:
     - The menus will be collapsed into a hamburger menu in small screens so the texts won't be overlapping with each other.
         - Navbar on phone:
 
@@ -70,10 +71,10 @@ The target audience for the portfolio website is an employer looking to engage a
 <img src="./docs/sitemap.png" alt="sitemap" style="zoom: 33%;" />
 
 ### Tech stack
-This website was built with HTML5, CSS and JavaScript, and uses following technologies:
+This website was built with HTML5, CSS and JavaScript, and uses the following technologies:
 - [SCSS](https://sass-lang.com/): for improving CSS logic and readability
-- [Netlify](https://www.netlify.com/): for deploying website
-- [Github](https://github.com/): for git management
+- [Netlify](https://www.netlify.com/): for deploying the website
+- [GitHub](https://github.com/): for git management
 - [Figma](https://www.figma.com/): for wireframe development
 - [Draw.io](https://app.diagrams.net/): for sitemap development
 
